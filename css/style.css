@@ -47,7 +47,11 @@ body {
     height: 1.7px;
     background-color: #333333;
 }
-
+@media screen and (max-width:950px){
+.line{
+    display: none;
+}
+}
 
 /*--------------------- left image section ------------------*/
 
@@ -167,6 +171,57 @@ main {
     width: 16px;
 }
 
+@media screen and (max-width:1250px) {
+    .heading h1 {
+        font-size: 5rem;
+    }
+    .social-icons{
+        flex-direction: row;
+        gap: 25px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:960px){
+    .heading h1 {
+        font-size: 3rem;
+    }
+    .heading > h1::after {
+        display: none;
+    }
+    .right-container .btn-wrapper {
+        position: absolute;
+        right: 0;
+        bottom: -70px;
+        right: 0px;
+    }
+
+
+    .arrow{
+        display: none;
+    }
+    .left-image-container{
+        display: none;
+     }
+     .bottom{
+        display: flex;
+        flex-direction: column;
+     }
+}
+
+@media screen and (max-width:660px) {
+    .bottom-quote {
+        position: relative;
+        left: 50px;
+        top: 100px;
+    }
+    .social-icons{
+        flex-direction: row;
+        gap: 25px;
+        right: -150px;
+    }       
+}
+
 /* bottom  section */
 .bottom {
     position: absolute;
@@ -213,11 +268,15 @@ main {
     top: 20px;
 }
 
-.bottom-quote {
-    position: absolute;
-    left: 270px;
-    top: 0px;
+@media screen and (min-width:850px) {
+    .bottom-quote {
+        position: absolute;
+        left: 270px;
+        top: 0px;
+    }
 }
+
+
 .bottom-quote p {
     font-size: 16px;
     margin-bottom: 20px;
